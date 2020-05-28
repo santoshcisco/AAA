@@ -1,0 +1,11 @@
+- name: Creating directory and copying passwd file
+  hosts: 172.31.19.144
+  tasks:
+   - name: creating directory
+     file:
+      name: newdir
+      state: directory
+   - name: copying passwd file
+     copy:
+      src: /etc/passwd
+      dest: newdir
