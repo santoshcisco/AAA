@@ -3,9 +3,9 @@
   tasks:
    - name: creating directory
      file:
-      name: newdir
+      name: newdir2
       state: directory
    - name: copying passwd file
      copy:
       src: /etc/passwd
-      dest: newdir
+      dest: newdir2
